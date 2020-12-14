@@ -19,34 +19,44 @@ public class HymnCorrection {
 	private String email;
 	
 	@NotNull
+	private String deviceInfo;
+	
+	@NotNull
 	private String text;
 	
 	@NotNull 
-	private Integer version;
+	private String version;
 
-	
-	public Integer gethymnId() {
+	public Integer getHymnId() {
 		return hymnId;
 	}
 
-	public void sethymnId(Integer hymnId) {
+	public void setHymnId(Integer hymnId) {
 		this.hymnId = hymnId;
 	}
 
-	public Integer getnumber() {
+	public Integer getNumber() {
 		return number;
 	}
 
-	public void setnumber(Integer number) {
+	public void setNumber(Integer number) {
 		this.number = number;
 	}
-	
+
 	public String getEmail() {
 		return email;
 	}
-	
+
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getDeviceInfo() {
+		return deviceInfo;
+	}
+
+	public void setDeviceInfo(String deviceInfo) {
+		this.deviceInfo = deviceInfo;
 	}
 
 	public String getText() {
@@ -57,18 +67,14 @@ public class HymnCorrection {
 		this.text = text;
 	}
 
-	public Integer getVersion() {
+	public String getVersion() {
 		return version;
 	}
 
-	public void setVersion(Integer version) {
+	public void setVersion(String version) {
 		this.version = version;
 	}
 
-	@Override
-	public String toString() {
-		return "Hymn [hymnId=" + hymnId + ", number=" + number + ", email=" + email + ", text=" + text
-				+ ", version=" + version + "]";
-	}
+	
 	
 }
