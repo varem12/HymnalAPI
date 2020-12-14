@@ -18,7 +18,7 @@ import mx.daro.himnario.himnario.himnarioweb.service.HymnalService;
 
 
 @RestController
-@RequestMapping(path = "/hymn" )
+@RequestMapping(path = "/HymnCorrection" )
 public class HymnController {
 
 	@Autowired
