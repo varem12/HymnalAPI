@@ -36,7 +36,7 @@ public class RequestInfoService {
 			}
 		}
 
-		if(!StringUtils.hasText(ipAddress) && ipAddress.length() > 15 && ipAddress.indexOf(",") > 0) {
+		if(StringUtils.hasText(ipAddress) && ipAddress.length() > 15 && ipAddress.indexOf(",") > 0) {
 			ipAddress = ipAddress.substring(0, ipAddress.indexOf(","));
 		}
 
