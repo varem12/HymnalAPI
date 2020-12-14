@@ -26,6 +26,8 @@ public class HymnCorrection {
 	
 	@NotNull 
 	private String version;
+	
+	private String ip;
 
 	public Integer getHymnId() {
 		return hymnId;
@@ -73,6 +75,14 @@ public class HymnCorrection {
 
 	public void setVersion(String version) {
 		this.version = version;
+	}
+
+	public String getIp() {
+		return ip;
+	}
+
+	public void setIp(String ip) {
+		this.ip = ip;
 	}
 
 	

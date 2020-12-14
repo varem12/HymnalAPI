@@ -1,5 +1,6 @@
 package mx.daro.himnario.himnario.himnarioweb.controller;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import mx.daro.himnario.himnario.himnarioweb.entity.HymnCorrection;
 import mx.daro.himnario.himnario.himnarioweb.service.HymnalService;
+import mx.daro.himnario.himnario.himnarioweb.service.RequestInfoService;
 
 
 @RestController
@@ -23,6 +25,9 @@ public class HymnController {
 
 	@Autowired
 	private HymnalService service;
+	
+	@Autowired
+	private RequestInfoService requestInfoService;
 
 	@GetMapping
 	@ResponseStatus(HttpStatus.OK)
@@ -32,7 +37,8 @@ public class HymnController {
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public HymnCorrection save (@Valid @RequestBody HymnCorrection hymnCorrection) {
+	public HymnCorrection save (HttpServletRequest request, @Valid @RequestBody HymnCorrection hymnCorrection) {
+		hymnCorrection.setIp(requestInfoService.getClientIp(request));
 		return service.save(hymnCorrection);
 	}
 
