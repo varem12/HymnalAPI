@@ -28,12 +28,13 @@ public class HymnController {
 	
 	@Autowired
 	private RequestInfoService requestInfoService;
-
+/*
 	@GetMapping
 	@ResponseStatus(HttpStatus.OK)
 	public Iterable<HymnCorrection> getAllHymns() {
 		return service.getAllHymns();
 	}
+*/
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
