@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config
+        xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xmlns='http://www.ehcache.org/v3'
+        xmlns:jsr107='http://www.ehcache.org/v3/jsr107'>
+ 
+    <service>
+        <jsr107:defaults enable-statistics="true"/>
+    </service>
+ 
+    <cache alias="versionCache">
+        <key-type>java.lang.Integer</key-type>
+        <value-type>mx.daro.hymnalVersion.entity.HymnalVersion</value-type>
+        <expiry>
+            <ttl unit="seconds">10</ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">1</heap>
+            <offheap unit="MB">1</offheap>
+        </resources>
+    </cache>
+</config>
