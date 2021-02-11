@@ -24,6 +24,5 @@ public class VersionController {
 	public Optional<HymnalVersion> getByVersionId(){
 		return service.getByVersionId(1);
 	}
-	
 
 }
