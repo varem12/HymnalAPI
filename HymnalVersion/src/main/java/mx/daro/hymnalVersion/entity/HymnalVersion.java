@@ -10,9 +10,6 @@ import com.sun.istack.NotNull;
 @Entity
 public class HymnalVersion implements Serializable {
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id
