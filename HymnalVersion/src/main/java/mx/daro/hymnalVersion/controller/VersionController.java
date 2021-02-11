@@ -25,11 +25,5 @@ public class VersionController {
 		return service.getByVersionId(1);
 	}
 	
-	/*
-	@GetMapping
-	@ResponseStatus(HttpStatus.OK)
-	public Optional<HymnalVersion> getByVersionList(){
-		return service.getByVersionId(1);
-	}*/
 
 }
