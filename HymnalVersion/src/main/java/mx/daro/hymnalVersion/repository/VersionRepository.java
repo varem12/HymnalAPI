@@ -7,6 +7,4 @@ import mx.daro.hymnalVersion.entity.HymnalVersion;
 
 @Repository
 public interface VersionRepository extends CrudRepository<HymnalVersion, Integer>{
-	
-
 }
