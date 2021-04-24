@@ -34,8 +34,7 @@ public class HymnController {
 	public Iterable<HymnCorrection> getAllHymns() {
 		return service.getAllHymns();
 	}
-*/
-	
+*/	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public HymnCorrection save (HttpServletRequest request, @Valid @RequestBody HymnCorrection hymnCorrection) {
