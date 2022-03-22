@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class HymnalpreferencesApplication {
-
+// - - - - - - - - -
 	@Value("${ajp.port}")
 	int ajpPort;
 	
